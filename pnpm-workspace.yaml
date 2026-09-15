@@ -2,3 +2,4 @@ engineStrict: true
 
 allowBuilds:
   simple-git-hooks: false
+  '@parcel/watcher': true
