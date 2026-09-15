@@ -1,4 +1,7 @@
 node_modules
 dist
 coverage
-*.lock
+playwright-report
+test-results
+.vitest
+pnpm-lock.yaml
