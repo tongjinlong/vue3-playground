@@ -7,6 +7,13 @@ import { createAppRouter } from '@/router'
 import { usePreferencesStore } from '@/stores/preferences'
 import { useProgressStore } from '@/stores/progress'
 
+vi.mock('@/components/CodeEditor.vue', () => ({
+  default: {
+    name: 'CodeEditorStub',
+    template: '<div class="code-editor-stub" />',
+  },
+}))
+
 const closeDialog = vi.fn()
 const showDialog = vi.fn()
 enableAutoUnmount(afterEach)
